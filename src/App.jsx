@@ -119,3 +119,37 @@ export default function App() {
     </main>
   );
 }
+
+<div className="card">
+  <h3>EXPAT'SNEST LTD</h3>
+
+  <img
+    src="/expatsnest.png"
+    alt="ExpatsNest Website"
+    className="project-image"
+  />
+
+  <p>
+    Professional relocation and housing services website developed
+    with modern frontend technologies.
+  </p>
+
+  <a href="https://expatsnests.com" target="_blank">
+    Visit Website
+  </a>
+</div>
+
+<div className="card">
+  <h3>G.S.S JIWA CLASS OF 2012</h3>
+
+  <img
+    src="/gss-jiwa.png"
+    alt="GSS Jiwa Website"
+    className="project-image"
+  />
+
+  <p>
+    Alumni association website for community engagement,
+    announcements, and gallery management.
+  </p>
+</div>
