@@ -95,7 +95,23 @@ export default function App() {
 
         </div>
       </section>
+      
+<section className="contact">
+  <h2>Contact Information</h2>
 
+  <p><strong>Location:</strong> Jabi, Abuja, Nigeria</p>
+  <p><strong>Phone:</strong> 08167339703</p>
+  <p><strong>Email:</strong> Adewalegarreth1@gmail.com</p>
+  <p><strong>GitHub:</strong> github.com/seangarreth</p>
+  <p><strong>Portfolio:</strong> portfolio-woad-six-24.vercel.app</p>
+</section>
+
+<footer>
+  <p>
+    © 2026 Adewale Sunday Garreth. Civil Site Engineer & Full Stack Web Developer.
+  </p>
+</footer>
+      
     </div>
   );
 }
