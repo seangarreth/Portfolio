@@ -69,6 +69,32 @@ export default function App() {
     <div className="skill-bar"><div style={{ width: "80%" }}></div></div>
   </div>
 </section>
+      
+      <section className="stats">
+  <h2>Professional Highlights</h2>
+
+  <div className="stats-grid">
+    <div className="stat-card">
+      <h3>3+</h3>
+      <p>Years of Site Engineering Experience</p>
+    </div>
+
+    <div className="stat-card">
+      <h3>3</h3>
+      <p>Primary Health Care Structures Completed</p>
+    </div>
+
+    <div className="stat-card">
+      <h3>2</h3>
+      <p>Live Website Projects Deployed</p>
+    </div>
+
+    <div className="stat-card">
+      <h3>15%</h3>
+      <p>Reduction in Project Delays</p>
+    </div>
+  </div>
+</section>
 
       <section>
         <h2>Featured Projects</h2>
