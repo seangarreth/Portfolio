@@ -36,6 +36,40 @@ export default function App() {
 </div>
       </section>
 
+      <section className="skills">
+  <h2>Professional Skills</h2>
+
+  <div className="skill">
+    <span>Site Supervision</span>
+    <div className="skill-bar"><div style={{ width: "90%" }}></div></div>
+  </div>
+
+  <div className="skill">
+    <span>AutoCAD</span>
+    <div className="skill-bar"><div style={{ width: "80%" }}></div></div>
+  </div>
+
+  <div className="skill">
+    <span>Project Management</span>
+    <div className="skill-bar"><div style={{ width: "85%" }}></div></div>
+  </div>
+
+  <div className="skill">
+    <span>React / Web Development</span>
+    <div className="skill-bar"><div style={{ width: "75%" }}></div></div>
+  </div>
+
+  <div className="skill">
+    <span>Python Programming</span>
+    <div className="skill-bar"><div style={{ width: "70%" }}></div></div>
+  </div>
+
+  <div className="skill">
+    <span>Microsoft Excel</span>
+    <div className="skill-bar"><div style={{ width: "80%" }}></div></div>
+  </div>
+</section>
+
       <section>
         <h2>Featured Projects</h2>
 
