@@ -454,8 +454,9 @@ footer {
   .timeline {
     padding-left: 20px;
   }
+}
 
   .timeline-item::before {
-    left: -31px;
+    left: -31px; {
   }
 }
