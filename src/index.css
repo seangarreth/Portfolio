@@ -274,3 +274,49 @@ footer {
   background: #16a34a;
   transform: translateY(-3px);
 }
+
+.skills {
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 50px 8%;
+  margin: 50px auto;
+  max-width: 1000px;
+  border: 1px solid #1e293b;
+}
+
+.skills h2 {
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin-bottom: 22px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #e2e8f0;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 14px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-bar div {
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #22c55e);
+  border-radius: 999px;
+  animation: growSkill 1.5s ease forwards;
+}
+
+@keyframes growSkill {
+  from {
+    width: 0;
+  }
+}
