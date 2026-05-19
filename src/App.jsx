@@ -20,19 +20,69 @@ export default function App() {
           solutions development.
         </p>
 
-        <div className="links">
-          <a href="mailto:adewalegarreth1@gmail.com">
-            Contact Me
-          </a>
+        <section className="contact">
+  <h2>Let’s Work Together</h2>
+  <p className="contact-intro">
+    Available for civil engineering supervision, construction projects,
+    web development, and technical collaboration.
+  </p>
 
-          <a
-            href="https://github.com/seangarreth"
-            target="_blank"
-          >
-            GitHub Profile
-          </a>
-        </div>
-      </section>
+  <div className="contact-grid">
+    <a href="tel:08167339703" className="contact-card">
+      <span>📞</span>
+      <div>
+        <h3>Phone</h3>
+        <p>08167339703</p>
+      </div>
+    </a>
+
+    <a href="mailto:Adewalegarreth1@gmail.com" className="contact-card">
+      <span>📧</span>
+      <div>
+        <h3>Email</h3>
+        <p>Adewalegarreth1@gmail.com</p>
+      </div>
+    </a>
+
+    <a
+      href="https://github.com/seangarreth"
+      target="_blank"
+      className="contact-card"
+    >
+      <span>💻</span>
+      <div>
+        <h3>GitHub</h3>
+        <p>github.com/seangarreth</p>
+      </div>
+    </a>
+
+    <a
+      href="https://portfolio-woad-six-24.vercel.app"
+      target="_blank"
+      className="contact-card"
+    >
+      <span>🌐</span>
+      <div>
+        <h3>Portfolio</h3>
+        <p>portfolio-woad-six-24.vercel.app</p>
+      </div>
+    </a>
+
+    <div className="contact-card">
+      <span>📍</span>
+      <div>
+        <h3>Location</h3>
+        <p>Jabi, Abuja, Nigeria</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>
+    © 2026 Adewale Sunday Garreth. Civil Site Engineer & Full Stack Web Developer.
+  </p>
+</footer>
 
       {/* PROJECTS SECTION */}
       <section>
