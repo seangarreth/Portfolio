@@ -16,6 +16,24 @@ export default function App() {
           <a href="mailto:Adewalegarreth1@gmail.com">Contact Me</a>
           <a href="https://github.com/seangarreth" target="_blank">GitHub Profile</a>
         </div>
+        
+        <div className="action-buttons">
+  <a
+    href="/Adewale-garreth-cv.pdf"
+    download
+    className="cv-button"
+  >
+    Download CV
+  </a>
+
+  <a
+    href="https://wa.me/2348167339703"
+    target="_blank"
+    className="whatsapp-button"
+  >
+    WhatsApp Me
+  </a>
+</div>
       </section>
 
       <section>
