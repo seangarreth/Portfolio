@@ -96,6 +96,58 @@ export default function App() {
   </div>
 </section>
 
+      <section className="timeline-section">
+  <h2>Experience Timeline</h2>
+
+  <div className="timeline">
+    <div className="timeline-item">
+      <span className="timeline-year">2021 - Present</span>
+      <h3>Civil Site Engineer</h3>
+      <p>
+        Supervised construction activities, managed artisans and subcontractors,
+        interpreted structural drawings, and supported project delivery from
+        planning to completion.
+      </p>
+    </div>
+
+    <div className="timeline-item">
+      <span className="timeline-year">2024</span>
+      <h3>Full Stack Software Engineering</h3>
+      <p>
+        Completed full stack software engineering training and developed
+        practical experience with React, GitHub, PostgreSQL, Render, and Vercel.
+      </p>
+    </div>
+
+    <div className="timeline-item">
+      <span className="timeline-year">2024</span>
+      <h3>Primary Health Care Structures</h3>
+      <p>
+        Participated in the completion of 3 units of Primary Health Care
+        structures with focus on site coordination and quality delivery.
+      </p>
+    </div>
+
+    <div className="timeline-item">
+      <span className="timeline-year">2022</span>
+      <h3>Python Programming Diploma</h3>
+      <p>
+        Completed Python Programming Diploma at Opecsta Academy, gaining
+        knowledge in programming fundamentals and problem-solving.
+      </p>
+    </div>
+
+    <div className="timeline-item">
+      <span className="timeline-year">2021</span>
+      <h3>2 Tons Overhead Tank Project</h3>
+      <p>
+        Completed construction and supervision of a 2 tons capacity overhead
+        tank project.
+      </p>
+    </div>
+  </div>
+</section>
+      
       <section>
         <h2>Featured Projects</h2>
 
