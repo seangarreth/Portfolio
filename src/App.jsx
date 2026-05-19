@@ -1,69 +1,101 @@
-<section>
-  <h2>Featured Projects</h2>
+export default function App() {
+  return (
+    <div className="container">
 
-  <div className="grid">
-    <div className="card">
-      <h3>EXPAT'SNEST LTD</h3>
+      {/* HERO SECTION */}
+      <section className="hero">
+        <img
+          src="/profile.jpg"
+          alt="Adewale Sunday Garreth"
+          className="profile-photo"
+        />
 
-      <img
-        src="/expatsnest.png"
-        alt="EXPAT'SNEST Ltd Website"
-        className="project-image"
-      />
+        <h1>Adewale Sunday Garreth</h1>
 
-      <p>
-        Professional relocation and housing services website developed with
-        modern frontend technologies.
-      </p>
+        <h2>Civil Site Engineer & Full Stack Web Developer</h2>
 
-      <a href="https://expatsnests.com" target="_blank">
-        Visit Website
-      </a>
+        <p>
+          Dedicated and results-driven professional with experience in
+          construction supervision, project coordination, and digital
+          solutions development.
+        </p>
+
+        <div className="links">
+          <a href="mailto:adewalegarreth1@gmail.com">
+            Contact Me
+          </a>
+
+          <a
+            href="https://github.com/seangarreth"
+            target="_blank"
+          >
+            GitHub Profile
+          </a>
+        </div>
+      </section>
+
+      {/* PROJECTS SECTION */}
+      <section>
+        <h2>Featured Projects</h2>
+
+        <div className="grid">
+
+          <div className="card">
+            <h3>EXPAT'SNEST LTD</h3>
+
+            <img
+              src="/project.jpg"
+              alt="EXPAT'SNEST Website"
+              className="project-image"
+            />
+
+            <p>
+              Professional relocation and housing services platform
+              developed with modern frontend technologies.
+            </p>
+
+            <a
+              href="https://expatsnests.com"
+              target="_blank"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          <div className="card">
+            <h3>G.S.S JIWA CLASS OF 2012</h3>
+
+            <p>
+              Alumni association website built for community engagement,
+              gallery management, announcements, and member interaction.
+            </p>
+
+            <a
+              href="https://www.gssjiwaclass2012.com"
+              target="_blank"
+            >
+              Visit Website
+            </a>
+          </div>
+
+          <div className="card">
+            <h3>2 Tons Overhead Tank</h3>
+
+            <img
+              src="/over-head-tank.jpg"
+              alt="Overhead Tank"
+              className="project-image"
+            />
+
+            <p>
+              Completed construction and supervision of a 2 tons
+              overhead tank project.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
     </div>
-
-    <div className="card">
-      <h3>G.S.S JIWA CLASS OF 2012</h3>
-
-      <img
-        src="/gss-jiwa-class-of-2012.png"
-        alt="GSS Jiwa Class of 2012 Website"
-        className="project-image"
-      />
-
-      <p>
-        Alumni association website built for community engagement,
-        announcements, gallery management, and member interaction.
-      </p>
-    </div>
-
-    <div className="card">
-      <h3>Primary Health Care Structures</h3>
-
-      <img
-        src="/primary-health-care.jpg"
-        alt="Primary Health Care Project"
-        className="project-image"
-      />
-
-      <p>
-        Completed 3 units of Primary Health Care structures in 2024 with focus
-        on quality delivery and supervision.
-      </p>
-    </div>
-
-    <div className="card">
-      <h3>2 Tons Overhead Tank</h3>
-
-      <img
-        src="/overhead-tank.jpg"
-        alt="Overhead Tank Project"
-        className="project-image"
-      />
-
-      <p>
-        Completed construction and supervision of a 2 tons capacity overhead
-        tank project in 2021.
-      </p>
-    </div>
-  </div>
-</section>
+  );
+}
