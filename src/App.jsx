@@ -1,167 +1,102 @@
 export default function App() {
   return (
     <div className="container">
-
-      {/* HERO SECTION */}
       <section className="hero">
-        <img
-          src="/profile.jpg"
-          alt="Adewale Sunday Garreth"
-          className="profile-photo"
-        />
+        <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
 
         <h1>Adewale Sunday Garreth</h1>
-
         <h2>Civil Site Engineer & Full Stack Web Developer</h2>
 
         <p>
-          Dedicated and results-driven professional with experience in
-          construction supervision, project coordination, and digital
-          solutions development.
+          Dedicated and results-driven professional with experience in construction
+          supervision, project coordination, and digital solutions development.
         </p>
 
-        <section className="contact">
-  <h2>Let’s Work Together</h2>
-  <p className="contact-intro">
-    Available for civil engineering supervision, construction projects,
-    web development, and technical collaboration.
-  </p>
+        <div className="links">
+          <a href="mailto:Adewalegarreth1@gmail.com">Contact Me</a>
+          <a href="https://github.com/seangarreth" target="_blank">GitHub Profile</a>
+        </div>
+      </section>
 
-  <div className="contact-grid">
-    <a href="tel:08167339703" className="contact-card">
-      <span>📞</span>
-      <div>
-        <h3>Phone</h3>
-        <p>08167339703</p>
-      </div>
-    </a>
-
-    <a href="mailto:Adewalegarreth1@gmail.com" className="contact-card">
-      <span>📧</span>
-      <div>
-        <h3>Email</h3>
-        <p>Adewalegarreth1@gmail.com</p>
-      </div>
-    </a>
-
-    <a
-      href="https://github.com/seangarreth"
-      target="_blank"
-      className="contact-card"
-    >
-      <span>💻</span>
-      <div>
-        <h3>GitHub</h3>
-        <p>github.com/seangarreth</p>
-      </div>
-    </a>
-
-    <a
-      href="https://portfolio-woad-six-24.vercel.app"
-      target="_blank"
-      className="contact-card"
-    >
-      <span>🌐</span>
-      <div>
-        <h3>Portfolio</h3>
-        <p>portfolio-woad-six-24.vercel.app</p>
-      </div>
-    </a>
-
-    <div className="contact-card">
-      <span>📍</span>
-      <div>
-        <h3>Location</h3>
-        <p>Jabi, Abuja, Nigeria</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>
-    © 2026 Adewale Sunday Garreth. Civil Site Engineer & Full Stack Web Developer.
-  </p>
-</footer>
-
-      {/* PROJECTS SECTION */}
       <section>
         <h2>Featured Projects</h2>
 
         <div className="grid">
-
           <div className="card">
             <h3>EXPAT'SNEST LTD</h3>
-
-            <img
-              src="/project.jpg"
-              alt="EXPAT'SNEST Website"
-              className="project-image"
-            />
-
-            <p>
-              Professional relocation and housing services platform
-              developed with modern frontend technologies.
-            </p>
-
-            <a
-              href="https://expatsnests.com"
-              target="_blank"
-            >
-              Visit Website
-            </a>
+            <img src="/project.jpg" alt="EXPAT'SNEST Website" className="project-image" />
+            <p>Professional relocation and housing services platform developed with modern frontend technologies.</p>
+            <a href="https://expatsnests.com" target="_blank">Visit Website</a>
           </div>
 
           <div className="card">
             <h3>G.S.S JIWA CLASS OF 2012</h3>
-
-            <p>
-              Alumni association website built for community engagement,
-              gallery management, announcements, and member interaction.
-            </p>
-
-            <a
-              href="https://www.gssjiwaclass2012.com"
-              target="_blank"
-            >
-              Visit Website
-            </a>
+            <p>Alumni association website built for community engagement, gallery management, announcements, and member interaction.</p>
+            <a href="https://www.gssjiwaclass2012.com" target="_blank">Visit Website</a>
           </div>
 
           <div className="card">
             <h3>2 Tons Overhead Tank</h3>
-
-            <img
-              src="/over-head-tank.jpg"
-              alt="Overhead Tank"
-              className="project-image"
-            />
-
-            <p>
-              Completed construction and supervision of a 2 tons
-              overhead tank project.
-            </p>
+            <img src="/over-head-tank.jpg" alt="Overhead Tank" className="project-image" />
+            <p>Completed construction and supervision of a 2 tons overhead tank project.</p>
           </div>
-
         </div>
       </section>
-      
-<section className="contact">
-  <h2>Contact Information</h2>
 
-  <p><strong>Location:</strong> Jabi, Abuja, Nigeria</p>
-  <p><strong>Phone:</strong> 08167339703</p>
-  <p><strong>Email:</strong> Adewalegarreth1@gmail.com</p>
-  <p><strong>GitHub:</strong> github.com/seangarreth</p>
-  <p><strong>Portfolio:</strong> portfolio-woad-six-24.vercel.app</p>
-</section>
+      <section className="contact">
+        <h2>Let’s Work Together</h2>
 
-<footer>
-  <p>
-    © 2026 Adewale Sunday Garreth. Civil Site Engineer & Full Stack Web Developer.
-  </p>
-</footer>
-      
+        <p className="contact-intro">
+          Available for civil engineering supervision, construction projects,
+          web development, and technical collaboration.
+        </p>
+
+        <div className="contact-grid">
+          <a href="tel:08167339703" className="contact-card">
+            <span>📞</span>
+            <div>
+              <h3>Phone</h3>
+              <p>08167339703</p>
+            </div>
+          </a>
+
+          <a href="mailto:Adewalegarreth1@gmail.com" className="contact-card">
+            <span>📧</span>
+            <div>
+              <h3>Email</h3>
+              <p>Adewalegarreth1@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/seangarreth" target="_blank" className="contact-card">
+            <span>💻</span>
+            <div>
+              <h3>GitHub</h3>
+              <p>github.com/seangarreth</p>
+            </div>
+          </a>
+
+          <a href="https://portfolio-woad-six-24.vercel.app" target="_blank" className="contact-card">
+            <span>🌐</span>
+            <div>
+              <h3>Portfolio</h3>
+              <p>portfolio-woad-six-24.vercel.app</p>
+            </div>
+          </a>
+
+          <div className="contact-card">
+            <span>📍</span>
+            <div>
+              <h3>Location</h3>
+              <p>Jabi, Abuja, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Adewale Sunday Garreth. Civil Site Engineer & Full Stack Web Developer.</p>
+      </footer>
     </div>
   );
 }
