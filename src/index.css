@@ -142,3 +142,22 @@ footer {
   margin: 15px 0;
   border: 1px solid #1e293b;
 }
+
+.contact {
+  background: #0f172a;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #020617;
+  color: #94a3b8;
+}
