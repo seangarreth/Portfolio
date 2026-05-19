@@ -75,17 +75,17 @@ export default function App() {
 
   <div className="stats-grid">
     <div className="stat-card">
-      <h3>3+</h3>
+      <h3>5+</h3>
       <p>Years of Site Engineering Experience</p>
     </div>
 
     <div className="stat-card">
-      <h3>3</h3>
-      <p>Primary Health Care Structures Completed</p>
+      <h3>5</h3>
+      <p> structural projects completed </p>
     </div>
 
     <div className="stat-card">
-      <h3>2</h3>
+      <h3>4</h3>
       <p>Live Website Projects Deployed</p>
     </div>
 
