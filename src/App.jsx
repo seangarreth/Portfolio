@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function App() {
+  const [lightMode, setLightMode] = useState(false);
   return (
     <div className="container">
       <section className="hero">
