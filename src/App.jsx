@@ -259,6 +259,33 @@ export default function App() {
       <footer>
         <p>© 2026 Adewale Sunday Garreth. Civil Site Engineer & Full Stack Web Developer.</p>
       </footer>
+<div className="floating-socials">
+
+  <a
+    href="https://wa.me/2348167339703"
+    target="_blank"
+    className="social-icon whatsapp"
+  >
+    💬
+  </a>
+
+  <a
+    href="https://github.com/seangarreth"
+    target="_blank"
+    className="social-icon github"
+  >
+    💻
+  </a>
+
+  <a
+    href="mailto:Adewalegarreth1@gmail.com"
+    className="social-icon email"
+  >
+    📧
+  </a>
+
+</div>
+      
     </div>
   );
 }
