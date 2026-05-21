@@ -554,3 +554,56 @@ section:nth-of-type(6) {
     font-size: 22px;
   }
 }
+
+.certifications {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 50px 8%;
+}
+
+.certifications h2 {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 35px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cert-card {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  border: 1px solid #1e293b;
+  border-radius: 22px;
+  padding: 28px;
+  transition: 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+.cert-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.cert-card p {
+  color: #cbd5e1;
+}
+
+.cert-card span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
