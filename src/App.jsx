@@ -14,6 +14,36 @@ export default function App() {
           supervision, project coordination, and digital solutions development.
         </p>
 
+<section className="certifications">
+  <h2>Certifications</h2>
+
+  <div className="cert-grid">
+    <div className="cert-card">
+      <h3>Full Stack Software Engineering</h3>
+      <p>Axiom Institute of Advanced Learning</p>
+      <span>2024</span>
+    </div>
+
+    <div className="cert-card">
+      <h3>Python Programming Diploma</h3>
+      <p>Opecsta Academy</p>
+      <span>2022</span>
+    </div>
+
+    <div className="cert-card">
+      <h3>AutoCAD Certification</h3>
+      <p>Professional Technical Certification</p>
+      <span>Completed</span>
+    </div>
+
+    <div className="cert-card">
+      <h3>Project Management Certification</h3>
+      <p>Professional Development</p>
+      <span>Completed</span>
+    </div>
+  </div>
+</section>
+        
         <div className="links">
           <a href="mailto:Adewalegarreth1@gmail.com">Contact Me</a>
           <a href="https://github.com/seangarreth" target="_blank">GitHub Profile</a>
