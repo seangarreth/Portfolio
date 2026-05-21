@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function App() {
   const [lightMode, setLightMode] = useState(false);
   return (
-    <div className="container">
+    <div className={lightMode ? "container light-mode" : "container"}>
       <section className="hero">
         <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
 
