@@ -607,3 +607,42 @@ section:nth-of-type(6) {
     grid-template-columns: 1fr;
   }
 }
+
+.floating-socials {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.social-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1) translateY(-4px);
+}
+
+.whatsapp {
+  background: #22c55e;
+}
+
+.github {
+  background: #111827;
+}
+
+.email {
+  background: #38bdf8;
+}
