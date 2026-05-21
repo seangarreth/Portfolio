@@ -5,7 +5,9 @@ export default function App() {
         <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
 
         <h1>Adewale Sunday Garreth</h1>
-        <h2>Civil Site Engineer & Full Stack Web Developer</h2>
+        <h2 className="typing-text">
+  Civil Site Engineer | Full Stack Web Developer | Project Supervisor
+</h2>
 
         <p>
           Dedicated and results-driven professional with experience in construction
