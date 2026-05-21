@@ -4,6 +4,12 @@ export default function App() {
   const [lightMode, setLightMode] = useState(false);
   return (
     <div className={lightMode ? "container light-mode" : "container"}>
+      <button
+  className="theme-toggle"
+  onClick={() => setLightMode(!lightMode)}
+>
+  {lightMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
+</button>
       <section className="hero">
         <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
 
