@@ -1,3 +1,69 @@
+import duplexFinished from "./assets/twin-duplex-base-university.jpg";
+import siteSupervision from "./assets/site-supervision.jpg";
+import renovationStage from "./assets/renovation-stage-1.jpg";
+import interiorFinishing1 from "./assets/interior-finishing-1.jpg";
+import interiorFinishing2 from "./assets/interior-finishing-2.jpg";
+import popCeiling from "./assets/pop-ceiling.jpg";
+import popCeiling2 from "./assets/pop-ceiling-2.jpg";
+
+const engineeringProjects = [
+  {
+    title: "Modern Duplex Construction",
+    image: duplexFinished,
+    category: "Construction",
+    description:
+      "Supervised and coordinated exterior finishing, painting, rendering, and final delivery.",
+  },
+
+  {
+    title: "Site Supervision & Rendering",
+    image: siteSupervision,
+    category: "Site Supervision",
+    description:
+      "Managed artisans and monitored rendering, plastering, and construction quality.",
+  },
+
+  {
+    title: "Renovation Project",
+    image: renovationStage,
+    category: "Renovation",
+    description:
+      "Handled renovation and upgrade works for residential properties.",
+  },
+
+  {
+    title: "Interior Finishing",
+    image: interiorFinishing1,
+    category: "Interior",
+    description:
+      "Interior finishing works including painting, fittings, and space finishing.",
+  },
+
+  {
+    title: "Luxury Interior Design",
+    image: interiorFinishing2,
+    category: "Interior",
+    description:
+      "Executed modern finishing with detailed ceiling and wall aesthetics.",
+  },
+
+  {
+    title: "POP Ceiling Installation",
+    image: popCeiling,
+    category: "POP Design",
+    description:
+      "Designed and supervised modern POP ceiling installation.",
+  },
+
+  {
+    title: "Modern Ceiling Finishing",
+    image: popCeiling2,
+    category: "POP Design",
+    description:
+      "Contemporary ceiling finishing with clean architectural detailing.",
+  },
+];
+
 import { useState } from "react";
 
 export default function App() {
@@ -49,6 +115,54 @@ export default function App() {
       <h3>Project Management Certification</h3>
       <p>Professional Development</p>
       <span>Completed</span>
+    </div>
+  </div>
+</section>
+
+        <section
+  id="projects"
+  className="py-20 px-6 bg-gray-50"
+>
+  <div className="max-w-7xl mx-auto">
+    
+    <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">
+      Engineering Projects
+    </h2>
+
+    <p className="text-center text-gray-600 mb-14 max-w-2xl mx-auto">
+      Selected construction, renovation, interior finishing,
+      and site supervision projects executed across residential developments.
+    </p>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {engineeringProjects.map((project, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2"
+        >
+          <div className="overflow-hidden">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-64 object-cover hover:scale-110 transition duration-700"
+            />
+          </div>
+
+          <div className="p-6">
+            <span className="inline-block mb-3 px-3 py-1 text-sm bg-yellow-100 text-yellow-700 rounded-full">
+              {project.category}
+            </span>
+
+            <h3 className="text-2xl font-semibold mb-3 text-gray-800">
+              {project.title}
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              {project.description}
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 </section>
