@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import duplexFinished from "./assets/twin-duplex-base-university.jpg";
 import siteSupervision from "./assets/site-supervision.jpg";
 import renovationStage from "./assets/renovation-stage-1.jpg";
@@ -63,8 +65,6 @@ const engineeringProjects = [
       "Contemporary ceiling finishing with clean architectural detailing.",
   },
 ];
-
-import { useState } from "react";
 
 export default function App() {
   const [lightMode, setLightMode] = useState(false);
