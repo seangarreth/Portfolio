@@ -76,6 +76,27 @@ export default function App() {
 >
   {lightMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
 </button>
+
+      <section id="projects" className="projects-section">
+  <h2>Engineering Projects</h2>
+
+  <div className="projects-grid">
+    {engineeringProjects.map((project, index) => (
+      <div className="project-card" key={index}>
+        <img src={project.image} alt={project.title} />
+
+        <div className="project-content">
+          <span>{project.category}</span>
+
+          <h3>{project.title}</h3>
+
+          <p>{project.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+      
       <section className="hero">
         <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
 
