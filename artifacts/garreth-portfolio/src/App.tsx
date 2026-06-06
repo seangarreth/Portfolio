@@ -72,22 +72,7 @@ export default function App() {
         {lightMode ? "🌙 Dark Mode" : "☀️ Light Mode"}
       </button>
 
-      <section id="projects" className="projects-section">
-        <h2>Engineering Projects</h2>
-        <div className="projects-grid">
-          {engineeringProjects.map((project, index) => (
-            <div className="project-card" key={index}>
-              <img src={project.image} alt={project.title} />
-              <div className="project-content">
-                <span>{project.category}</span>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
+      {/* 1. HERO SECTION */}
       <section className="hero">
         <div>
           <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
@@ -102,7 +87,7 @@ export default function App() {
 
           <div className="action-buttons">
             <a
-              href="/Adewale_Garreth_CV.pdfgitkeep"
+              href="/Adewale_Garreth_CV.pdf"
               download
               className="cv-button"
             >
@@ -125,32 +110,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="certifications">
-        <h2>Certifications</h2>
-        <div className="cert-grid">
-          <div className="cert-card">
-            <h3>Full Stack Software Engineering</h3>
-            <p>Axiom Institute of Advanced Learning</p>
-            <span>2024</span>
-          </div>
-          <div className="cert-card">
-            <h3>Python Programming Diploma</h3>
-            <p>Opecsta Academy</p>
-            <span>2022</span>
-          </div>
-          <div className="cert-card">
-            <h3>AutoCAD Certification</h3>
-            <p>Professional Technical Certification</p>
-            <span>Completed</span>
-          </div>
-          <div className="cert-card">
-            <h3>Project Management Certification</h3>
-            <p>Professional Development</p>
-            <span>Completed</span>
-          </div>
-        </div>
-      </section>
-
+      {/* 2. PROFILE / ABOUT ME — Skills + Stats */}
       <section className="skills">
         <h2>Professional Skills</h2>
         <div className="skill">
@@ -201,6 +161,47 @@ export default function App() {
         </div>
       </section>
 
+      {/* 3. ENGINEERING PROJECTS */}
+      <section id="engineering-projects" className="projects-section">
+        <h2>Engineering Projects</h2>
+        <div className="projects-grid">
+          {engineeringProjects.map((project, index) => (
+            <div className="project-card" key={index}>
+              <img src={project.image} alt={project.title} />
+              <div className="project-content">
+                <span>{project.category}</span>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 4. SITE INSPECTION / PROJECT GALLERY */}
+      <section>
+        <h2>Featured Projects</h2>
+        <div className="grid">
+          <div className="card">
+            <h3>EXPAT'SNEST LTD</h3>
+            <img src="/project.jpg" alt="EXPAT'SNEST Website" className="project-image" />
+            <p>Professional relocation and housing services platform developed with modern frontend technologies.</p>
+            <a href="https://expatsnests.com" target="_blank" rel="noreferrer">Visit Website</a>
+          </div>
+          <div className="card">
+            <h3>G.S.S JIWA CLASS OF 2012</h3>
+            <p>Alumni association website built for community engagement, gallery management, announcements, and member interaction.</p>
+            <a href="https://www.gssjiwaclass2012.com" target="_blank" rel="noreferrer">Visit Website</a>
+          </div>
+          <div className="card">
+            <h3>2 Tons Overhead Tank</h3>
+            <img src="/over-head-tank.jpg" alt="Overhead Tank" className="project-image" />
+            <p>Completed construction and supervision of a 2 tons overhead tank project.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. EXPERIENCE AND CERTIFICATIONS */}
       <section className="timeline-section">
         <h2>Experience Timeline</h2>
         <div className="timeline">
@@ -248,28 +249,33 @@ export default function App() {
         </div>
       </section>
 
-      <section>
-        <h2>Featured Projects</h2>
-        <div className="grid">
-          <div className="card">
-            <h3>EXPAT'SNEST LTD</h3>
-            <img src="/project.jpg" alt="EXPAT'SNEST Website" className="project-image" />
-            <p>Professional relocation and housing services platform developed with modern frontend technologies.</p>
-            <a href="https://expatsnests.com" target="_blank" rel="noreferrer">Visit Website</a>
+      <section className="certifications">
+        <h2>Certifications</h2>
+        <div className="cert-grid">
+          <div className="cert-card">
+            <h3>Full Stack Software Engineering</h3>
+            <p>Axiom Institute of Advanced Learning</p>
+            <span>2024</span>
           </div>
-          <div className="card">
-            <h3>G.S.S JIWA CLASS OF 2012</h3>
-            <p>Alumni association website built for community engagement, gallery management, announcements, and member interaction.</p>
-            <a href="https://www.gssjiwaclass2012.com" target="_blank" rel="noreferrer">Visit Website</a>
+          <div className="cert-card">
+            <h3>Python Programming Diploma</h3>
+            <p>Opecsta Academy</p>
+            <span>2022</span>
           </div>
-          <div className="card">
-            <h3>2 Tons Overhead Tank</h3>
-            <img src="/over-head-tank.jpg" alt="Overhead Tank" className="project-image" />
-            <p>Completed construction and supervision of a 2 tons overhead tank project.</p>
+          <div className="cert-card">
+            <h3>AutoCAD Certification</h3>
+            <p>Professional Technical Certification</p>
+            <span>Completed</span>
+          </div>
+          <div className="cert-card">
+            <h3>Project Management Certification</h3>
+            <p>Professional Development</p>
+            <span>Completed</span>
           </div>
         </div>
       </section>
 
+      {/* 6. CONTACT SECTION */}
       <section className="contact">
         <h2>Let's Work Together</h2>
         <p className="contact-intro">
@@ -315,10 +321,12 @@ export default function App() {
         </div>
       </section>
 
+      {/* 7. FOOTER */}
       <footer>
         <p>© 2026 Adewale Sunday Garreth. Civil Site Engineer & Full Stack Web Developer.</p>
       </footer>
 
+      {/* Fixed floating social buttons */}
       <div className="floating-socials">
         <a
           href="https://wa.me/2348167339703"
