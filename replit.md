@@ -1,6 +1,6 @@
-# [Project name]
+# Garreth Portfolio
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A personal portfolio website for Adewale Sunday Garreth — Civil Site Engineer & Full Stack Web Developer.
 
 ## Run & Operate
 
@@ -14,6 +14,7 @@ _Replace the heading above with the project's name, and this line with one sente
 ## Stack
 
 - pnpm workspaces, Node.js 24, TypeScript 5.9
+- Frontend: React + Vite (artifact: `garreth-portfolio`)
 - API: Express 5
 - DB: PostgreSQL + Drizzle ORM
 - Validation: Zod (`zod/v4`), `drizzle-zod`
@@ -22,15 +23,32 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/garreth-portfolio/` — frontend portfolio app (React + Vite, served at `/`)
+  - `src/App.tsx` — main portfolio component (all sections in one file)
+  - `src/portfolio.css` — all custom CSS (dark navy/sky blue theme)
+  - `src/assets/` — engineering project images
+  - `public/` — profile photo, project images, CV PDF
+- `artifacts/api-server/` — Express API server (served at `/api`)
+- `lib/api-spec/openapi.yaml` — API contract (source of truth)
+- `lib/db/src/schema/` — Drizzle ORM schema
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Portfolio is purely frontend (no backend needed) — all data is static in `App.tsx`
+- Custom CSS in `portfolio.css` instead of Tailwind for the portfolio sections, to match the original Vercel design exactly
+- Images imported via Vite asset pipeline for engineering projects; public folder for profile/CV
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+A single-page portfolio showcasing:
+- Engineering Projects gallery (photo cards)
+- Hero section with profile photo and CTA buttons
+- Certifications, Skills bars, Stats highlights
+- Experience Timeline
+- Featured web projects
+- Contact section with grid of contact cards
+- Floating social media buttons
+- Light/Dark mode toggle
 
 ## User preferences
 
@@ -38,7 +56,9 @@ _Populate as you build — explicit user instructions worth remembering across s
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- `renovation- stage-1.jpg` in the original backup had a space in its name — copied to `renovation-stage-1.jpg` in assets
+- Some asset files from the Vercel export were gitkeep placeholders (2 bytes) — only real images were present in the backup
+- Do NOT run `pnpm dev` or `pnpm run dev` at the workspace root. Use `restart_workflow` instead.
 
 ## Pointers
 
