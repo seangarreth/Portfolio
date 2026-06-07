@@ -74,13 +74,51 @@ export default function App() {
 
       {/* 1. HERO SECTION */}
       <section className="hero">
-        <div>
-          <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
+        {/* Left: Coding / Developer panel */}
+        <div className="hero-code-panel" aria-hidden="true">
+          <div className="code-window">
+            <div className="code-dots">
+              <span className="dot dot-red"></span>
+              <span className="dot dot-yellow"></span>
+              <span className="dot dot-green"></span>
+            </div>
+            <div className="code-body">
+              <div className="cl"><span className="ck">const</span> <span className="cf">engineer</span> = {'{'}</div>
+              <div className="cl ci"><span className="cp">name</span>: <span className="cs">"Garreth"</span>,</div>
+              <div className="cl ci"><span className="cp">role</span>: <span className="cs">"Civil+Dev"</span>,</div>
+              <div className="cl ci"><span className="cp">stack</span>: [</div>
+              <div className="cl ci2"><span className="cs">"React"</span>, <span className="cs">"Node"</span>,</div>
+              <div className="cl ci2"><span className="cs">"PostgreSQL"</span></div>
+              <div className="cl ci">],</div>
+              <div className="cl ci"><span className="cp">cad</span>: <span className="cs">"AutoCAD"</span>,</div>
+              <div className="cl ci"><span className="cp">site</span>: <span className="cs">"Abuja, NG"</span></div>
+              <div className="cl">{'}'}</div>
+              <div className="cl">&nbsp;</div>
+              <div className="cl"><span className="ck">function</span> <span className="cf">build</span><span className="cn">()</span> {'{'}</div>
+              <div className="cl ci"><span className="ck">return</span> <span className="cs">"excellence"</span>;</div>
+              <div className="cl">{'}'}</div>
+              <div className="cl">&nbsp;</div>
+              <div className="cl"><span className="cc">// 5+ yrs on-site</span></div>
+              <div className="cl"><span className="cc">// 4 live projects</span></div>
+              <div className="cl"><span className="code-cursor">█</span></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Center: Main content card */}
+        <div className="hero-content">
+          <div className="profile-wrapper">
+            <div className="profile-ring"></div>
+            <img src="/profile.jpg" alt="Adewale Sunday Garreth" className="profile-photo" />
+          </div>
+
+          <div className="hero-badge">Civil Engineer · Full Stack Developer</div>
+
           <h1>Adewale Sunday Garreth</h1>
           <h2 className="typing-text">
             Civil Site Engineer | Full Stack Web Developer | Project Supervisor
           </h2>
-          <p>
+          <p className="hero-desc">
             Dedicated and results-driven professional with experience in construction
             supervision, project coordination, and digital solutions development.
           </p>
@@ -106,6 +144,45 @@ export default function App() {
           <div className="links">
             <a href="mailto:Adewalegarreth1@gmail.com">Contact Me</a>
             <a href="https://github.com/seangarreth" target="_blank" rel="noreferrer">GitHub Profile</a>
+          </div>
+        </div>
+
+        {/* Right: Blueprint / Engineering panel */}
+        <div className="hero-blueprint-panel" aria-hidden="true">
+          <div className="blueprint-window">
+            <svg className="blueprint-svg" viewBox="0 0 200 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="bp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(56,189,248,0.14)" strokeWidth="0.5"/>
+                </pattern>
+              </defs>
+              <rect width="200" height="270" fill="url(#bp-grid)"/>
+              <polyline points="30,85 100,32 170,85" stroke="rgba(56,189,248,0.8)" strokeWidth="1.5" fill="none"/>
+              <rect x="40" y="85" width="120" height="140" stroke="rgba(56,189,248,0.8)" strokeWidth="1.5" fill="rgba(56,189,248,0.03)"/>
+              <rect x="85" y="178" width="30" height="47" stroke="rgba(56,189,248,0.7)" strokeWidth="1" fill="rgba(56,189,248,0.05)"/>
+              <rect x="50" y="108" width="30" height="28" stroke="rgba(56,189,248,0.65)" strokeWidth="1" fill="rgba(56,189,248,0.06)"/>
+              <rect x="120" y="108" width="30" height="28" stroke="rgba(56,189,248,0.65)" strokeWidth="1" fill="rgba(56,189,248,0.06)"/>
+              <line x1="50" y1="118" x2="80" y2="118" stroke="rgba(56,189,248,0.25)" strokeWidth="0.5"/>
+              <line x1="65" y1="108" x2="65" y2="136" stroke="rgba(56,189,248,0.25)" strokeWidth="0.5"/>
+              <line x1="120" y1="118" x2="150" y2="118" stroke="rgba(56,189,248,0.25)" strokeWidth="0.5"/>
+              <line x1="135" y1="108" x2="135" y2="136" stroke="rgba(56,189,248,0.25)" strokeWidth="0.5"/>
+              <line x1="22" y1="85" x2="22" y2="225" stroke="rgba(34,197,94,0.6)" strokeWidth="0.8" strokeDasharray="4,3"/>
+              <line x1="18" y1="85" x2="26" y2="85" stroke="rgba(34,197,94,0.6)" strokeWidth="0.8"/>
+              <line x1="18" y1="225" x2="26" y2="225" stroke="rgba(34,197,94,0.6)" strokeWidth="0.8"/>
+              <text x="11" y="160" fill="rgba(34,197,94,0.7)" fontSize="6" textAnchor="middle" transform="rotate(-90,11,160)">6.5m</text>
+              <line x1="40" y1="245" x2="160" y2="245" stroke="rgba(34,197,94,0.6)" strokeWidth="0.8" strokeDasharray="4,3"/>
+              <line x1="40" y1="241" x2="40" y2="249" stroke="rgba(34,197,94,0.6)" strokeWidth="0.8"/>
+              <line x1="160" y1="241" x2="160" y2="249" stroke="rgba(34,197,94,0.6)" strokeWidth="0.8"/>
+              <text x="100" y="258" fill="rgba(34,197,94,0.7)" fontSize="6" textAnchor="middle">8.0m</text>
+              <circle cx="168" cy="22" r="14" stroke="rgba(56,189,248,0.5)" strokeWidth="1" fill="none"/>
+              <line x1="168" y1="10" x2="168" y2="34" stroke="rgba(56,189,248,0.5)" strokeWidth="0.8"/>
+              <line x1="156" y1="22" x2="180" y2="22" stroke="rgba(56,189,248,0.5)" strokeWidth="0.8"/>
+              <text x="168" y="8" fill="rgba(56,189,248,0.7)" fontSize="5.5" textAnchor="middle">N</text>
+              <text x="168" y="40" fill="rgba(56,189,248,0.7)" fontSize="5.5" textAnchor="middle">S</text>
+              <text x="152" y="24" fill="rgba(56,189,248,0.7)" fontSize="5.5" textAnchor="middle">W</text>
+              <text x="184" y="24" fill="rgba(56,189,248,0.7)" fontSize="5.5" textAnchor="middle">E</text>
+            </svg>
+            <div className="blueprint-label">◈ SITE PLAN · SCALE 1:100</div>
           </div>
         </div>
       </section>
